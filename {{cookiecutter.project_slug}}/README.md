@@ -16,6 +16,8 @@ Docker Hub Build
 This template assumes you to be registered in Docker Hub.
 To setup automated build via Docker Hub refer to: [Set up Automated builds](https://docs.docker.com/docker-hub/builds/).
 
+To configure automated builds follow this link [Build configurations](https://cloud.docker.com/u/{{ cookiecutter.username }}/repository/docker/{{ cookiecutter.username }}/{{ cookiecutter.project_slug }}/builds/edit)
+
 
 Usage Example
 -------------
