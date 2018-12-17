@@ -1,7 +1,7 @@
 {% if cookiecutter.open_source_license == 'MIT' %}
 MIT License
 
-Copyright (c) {% now 'local', '%Y' %}, {% if cookiecutter.organization %}{{ cookiecutter.organization }}{% else %}{{ cookiecutter.author }}<{{ cookiecutter.email | replace('@',' at ') | replace('.', ' dot ') }}>{% endif %}
+Copyright (c) {% now 'local', '%Y' %}, {% if cookiecutter.organization %}{{ cookiecutter.organization }}{% else %}{{ cookiecutter.author }} <{{ cookiecutter.email.split('@')[0] }} at {{ cookiecutter.email.split('@')[1]|replace('.', ' dot ') }}>{% endif %}
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -23,7 +23,7 @@ SOFTWARE.
 {% elif cookiecutter.open_source_license == 'BSD-2-Clause' %}
 BSD 2-Clause "Simplified" License
 
-Copyright (c) {% now 'local', '%Y' %}, {% if cookiecutter.organization %}{{ cookiecutter.organization }}{% else %}{{ cookiecutter.author }}<{{ cookiecutter.email | replace('@',' at ') | replace('.', ' dot ') }}>{% endif %}. All rights reserved.
+Copyright (c) {% now 'local', '%Y' %}, {% if cookiecutter.organization %}{{ cookiecutter.organization }}{% else %}{{ cookiecutter.author }} <{{ cookiecutter.email.split('@')[0] }} at {{ cookiecutter.email.split('@')[1]|replace('.', ' dot ') }}>{% endif %}. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -49,7 +49,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 {% elif cookiecutter.open_source_license == 'BSD-3-Clause' %}
 BSD 3-Clause "New" or "Revised" License
 
-Copyright (c) {% now 'local', '%Y' %}, {% if cookiecutter.organization %}{{ cookiecutter.organization }}{% else %}{{ cookiecutter.author }}<{{ cookiecutter.email | replace('@',' at ') | replace('.', ' dot ') }}>{% endif %}. All rights reserved.
+Copyright (c) {% now 'local', '%Y' %}, {% if cookiecutter.organization %}{{ cookiecutter.organization }}{% else %}{{ cookiecutter.author }} <{{ cookiecutter.email.split('@')[0] }} at {{ cookiecutter.email.split('@')[1]|replace('.', ' dot ') }}>{% endif %}. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are
@@ -79,7 +79,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 {% elif cookiecutter.open_source_license == 'Apache-2.0' %}
 Apache License 2.0
 
-Copyright (c) {% now 'local', '%Y' %}, {% if cookiecutter.organization %}{{ cookiecutter.organization }}{% else %}{{ cookiecutter.author }}<{{ cookiecutter.email | replace('@',' at ') | replace('.', ' dot ') }}>{% endif %}. All rights reserved.
+Copyright (c) {% now 'local', '%Y' %}, {% if cookiecutter.organization %}{{ cookiecutter.organization }}{% else %}{{ cookiecutter.author }} <{{ cookiecutter.email.split('@')[0] }} at {{ cookiecutter.email.split('@')[1]|replace('.', ' dot ') }}>{% endif %}. All rights reserved.
 
 Apache License
 Version 2.0, January 2004
@@ -1792,7 +1792,7 @@ future versions of the GNU Lesser General Public License shall apply, that
 proxy's public statement of acceptance of any version is permanent
 authorization for you to choose that version for the Library.
 {% elif cookiecutter.open_source_license == 'Not licensed' %}
-Copyright (c) {% now 'local', '%Y' %}, {% if cookiecutter.organization %}{{ cookiecutter.organization }}{% else %}{{ cookiecutter.author }}<{{ cookiecutter.email | replace('@',' at ') | replace('.', ' dot ') }}>{% endif %}
+Copyright (c) {% now 'local', '%Y' %}, {% if cookiecutter.organization %}{{ cookiecutter.organization }}{% else %}{{ cookiecutter.author }} <{{ cookiecutter.email.split('@')[0] }} at {{ cookiecutter.email.split('@')[1]|replace('.', ' dot ') }}>{% endif %}
 
 Not licensed.
 {% endif %}
