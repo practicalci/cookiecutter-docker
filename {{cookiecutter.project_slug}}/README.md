@@ -46,7 +46,7 @@ sh
   $ bump2version part major
   $ bump2version part minor
   $ bump2version part patch
-
+```
 
 License
 -------
