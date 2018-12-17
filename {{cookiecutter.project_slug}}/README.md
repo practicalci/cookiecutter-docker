@@ -70,3 +70,8 @@ This work is derived from the work of:
 | Author            | Work Source                                  | License                      |
 |:------------------|:---------------------------------------------|:-----------------------------|
 | Add Some Author   | <https://some-author-work-source-url>        | [some-author-license.txt](./attributions/some-author-license.txt) |
+
+References
+----------
+
+List of references
