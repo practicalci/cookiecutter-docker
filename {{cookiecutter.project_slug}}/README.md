@@ -10,15 +10,6 @@ Download size of this image is only:
 [![](https://images.microbadger.com/badges/image/{{ cookiecutter.username }}/{{ cookiecutter.project_slug }}.svg)](http://microbadger.com/images/{{ cookiecutter.username }}/{{ cookiecutter.project_slug }} "Get your own image badge on microbadger.com")
 
 
-Docker Hub Build
-----------------
-
-This template assumes you to be registered in Docker Hub.
-To setup automated build via Docker Hub refer to: [Set up Automated builds](https://docs.docker.com/docker-hub/builds/).
-
-To configure automated builds follow this link [Build configurations](https://cloud.docker.com/u/{{ cookiecutter.username }}/repository/docker/{{ cookiecutter.username }}/{{ cookiecutter.project_slug }}/builds/edit)
-
-
 Usage Example
 -------------
 
@@ -33,8 +24,29 @@ Dockerfile
 
 ```
 sh
-    $ docker build -t my_app .
+  $ docker build -t my_app .
 ```
+
+Build image in Docker Hub 
+-------------------------
+
+This template assumes you to be registered in Docker Hub.
+To setup automated build via Docker Hub refer to: [Set up Automated builds](https://docs.docker.com/docker-hub/builds/).
+
+To configure automated builds follow this link [Build configurations](https://cloud.docker.com/u/{{ cookiecutter.username }}/repository/docker/{{ cookiecutter.username }}/{{ cookiecutter.project_slug }}/builds/edit)
+
+
+Release a new image
+-------------------
+
+Make your changes and bump the image version with one of the commands, depending on the version bump:
+
+```
+sh
+  $ bump2version part major
+  $ bump2version part minor
+  $ bump2version part patch
+
 
 License
 -------
