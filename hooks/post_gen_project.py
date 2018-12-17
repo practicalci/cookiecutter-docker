@@ -12,6 +12,7 @@ if __name__ == '__main__':
     subprocess.call(('git', 'init'))
     subprocess.call(('git', 'checkout', '-b', branch))
     subprocess.call(('git', 'remote', 'add', remote, url))
+    subprocess.call(('git', 'branch', 'add', '--set-upstream-to=origin/master', 'master'))
     subprocess.call(('git', 'config', 'user.name', username))
     subprocess.call(('git', 'config', 'user.email', email))
     subprocess.call(('git', 'add', '.'))
