@@ -1,6 +1,6 @@
 {
     "project_name": "My Docker Image",
-    "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '_') }}",
+    "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
     "project_short_description": "A Docker image",
     "description": "This docker image used as a base for...",
     "version": "0.0.1",
