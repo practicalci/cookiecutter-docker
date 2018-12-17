@@ -1,7 +1,7 @@
 [![Docker Stars](https://img.shields.io/docker/stars/{{ cookiecutter.username }}/{{ cookiecutter.project_slug }}.svg?style=flat-square)](https://hub.docker.com/r/{{ cookiecutter.username }}/{{ cookiecutter.project_slug }}/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/{{ cookiecutter.username }}/{{ cookiecutter.project_slug }}.svg?style=flat-square)](https://hub.docker.com/r/{{ cookiecutter.username }}/{{ cookiecutter.project_slug }}/)
 
-{{ project_short_description }} Docker image
+{{ cookiecutter.project_short_description }} Docker image
 {{ '=' * cookiecutter.project_name | length }}{{ '=' * (' Docker image' | length) }}
 
 {{ cookiecutter.description }}
@@ -37,7 +37,7 @@ sh
 License
 -------
 
-This project is licensed under: {{ cookiecutter.open_source_license }}({%- if cookiecutter.open_source_license == 'MIT' -%}
+This project is licensed under: [{{ cookiecutter.open_source_license }}]({%- if cookiecutter.open_source_license == 'MIT' -%}
 https://tldrlegal.com/license/mit-license
 {%- elif cookiecutter.open_source_license == 'BSD-2-Clause' -%}
 https://tldrlegal.com/license/bsd-2-clause-license-(freebsd)
@@ -60,6 +60,8 @@ https://choosealicense.com/no-permission/
 
 Attributions
 ------------
+
+Add below authors and licenses from which your work derives from, if any.
 
 This work is derived from the work of:
 
