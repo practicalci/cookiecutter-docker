@@ -1,5 +1,5 @@
-[![Docker Stars](https://img.shields.io/docker/stars/{{ cookiecutter.username }}/{{ cookiecutter.project_slug }}.svg?style=flat-square)](https://hub.docker.com/r/{{ cookiecutter.username }}/{{ cookiecutter.project_slug }}/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/{{ cookiecutter.username }}/{{ cookiecutter.project_slug }}.svg?style=flat-square)](https://hub.docker.com/r/{{ cookiecutter.username }}/{{ cookiecutter.project_slug }}/)
+[![Docker Stars](https://img.shields.io/docker/stars/{{ cookiecutter.username }}/{{ cookiecutter.docker_image_name }}.svg?style=flat-square)](https://hub.docker.com/r/{{ cookiecutter.username }}/{{ cookiecutter.docker_image_name }}/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/{{ cookiecutter.username }}/{{ cookiecutter.docker_image_name }}.svg?style=flat-square)](https://hub.docker.com/r/{{ cookiecutter.username }}/{{ cookiecutter.docker_image_name }}/)
 
 {{ cookiecutter.project_short_description }} Docker image
 {{ '=' * cookiecutter.project_name | length }}{{ '=' * (' Docker image' | length) }}
@@ -7,7 +7,7 @@
 {{ cookiecutter.description }}
 
 Download size of this image is only:
-[![](https://images.microbadger.com/badges/image/{{ cookiecutter.username }}/{{ cookiecutter.project_slug }}.svg)](http://microbadger.com/images/{{ cookiecutter.username }}/{{ cookiecutter.project_slug }} "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/{{ cookiecutter.username }}/{{ cookiecutter.docker_image_name }}.svg)](http://microbadger.com/images/{{ cookiecutter.username }}/{{ cookiecutter.docker_image_name }} "Get your own image badge on microbadger.com")
 
 
 Usage Example
@@ -17,7 +17,7 @@ This image is intended to be a base image for your projects, so you may use it l
 
 ```
 Dockerfile
-    FROM {{ cookiecutter.username }}/{{ cookiecutter.project_slug }}
+    FROM {{ cookiecutter.username }}/{{ cookiecutter.docker_image_name }}
 
     COPY ./my_app /usr/local/bin/my_app
 ```
@@ -33,7 +33,7 @@ Build image in Docker Hub
 This template assumes you to be registered in Docker Hub.
 To setup automated build via Docker Hub refer to: [Set up Automated builds](https://docs.docker.com/docker-hub/builds/).
 
-To configure automated builds follow this link [Build configurations](https://cloud.docker.com/u/{{ cookiecutter.username }}/repository/docker/{{ cookiecutter.username }}/{{ cookiecutter.project_slug }}/builds/edit)
+To configure automated builds follow this link [Build configurations](https://cloud.docker.com/u/{{ cookiecutter.username }}/repository/docker/{{ cookiecutter.username }}/{{ cookiecutter.docker_image_name }}/builds/edit)
 
 
 Release a new image
